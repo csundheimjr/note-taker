@@ -8,7 +8,7 @@ const { v4: uuidv4 } = require("uuid");
 uuidv4();
 
 const app = express();
-
+app.use(express.static("./Develop/public"));
 app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
